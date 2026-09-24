@@ -1,0 +1,19 @@
+@minigateway_HostAddress = http://localhost:5222
+
+GET {{minigateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+### Criar pagamento
+POST {{minigateway_HostAddress}}/api/payments
+Content-Type: application/json
+
+{
+  "amount": 39.90
+}
+
+### Confirmar pagamento
+POST {{minigateway_HostAddress}}/api/payments/12/confirm
+
+### Buscar pagamento por Id
+GET {{minigateway_HostAddress}}/api/payments/8
