@@ -1,4 +1,4 @@
-# MiniGateway
+# PayFlow
 
 API REST desenvolvida em **C# e ASP.NET Core** que simula o funcionamento básico de um gateway de pagamentos.
 
